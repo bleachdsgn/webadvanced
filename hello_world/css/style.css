@@ -1,0 +1,49 @@
+body {
+
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+img {
+
+	position: fixed;
+	max-height: 45vh;
+	max-width: 45vw;
+
+}
+
+#text {
+
+	z-index: 1;
+	position: absolute;
+	font-size: 3vw;
+	line-height: 3.6vw;
+	letter-spacing: .090vw;
+	font-family: AntiqueOliNorOutP-Reg;
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+#container {
+	opacity: 0;
+	transition: opacity 1.5s linear;
+}
+
+#container.fade-in {
+	opacity: 1;
+}
+
+a {
+
+	text-decoration: none;
+	color: black;
+
+}
+
+a:hover {
+
+	cursor: pointer;
+
+}
