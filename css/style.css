@@ -1,0 +1,79 @@
+@font-face {
+
+	font-family: 'Optima'; 
+	src: url('Optima.ttc');
+
+}
+
+body {
+
+	background: black;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin: 5vw;
+    overflow: hidden; 
+/* "overflow: hidden;" removes both scrollbars */
+    cursor: none;
+
+}
+
+h1 {
+
+	font-weight: 400;
+	font-size: 4vw;
+	margin: 0;
+
+}
+
+ul li {
+
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	font-size: 7vw;
+	line-height: 10vw;
+	letter-spacing: .3vw;
+	text-transform: uppercase;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: black;
+
+}
+
+a:hover {
+
+	text-decoration: underline;
+
+}
+
+div {
+
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 0;
+
+}
+
+div.circle {
+
+	width: 200;
+	height: 200;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+    float: left;
+	z-index: -1;
+
+}
+
+.lights {
+
+  background-color: white;
+  cursor: auto;
+
+}
