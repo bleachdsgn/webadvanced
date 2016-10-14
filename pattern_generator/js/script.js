@@ -14,15 +14,20 @@ $(".heart").click(function(){
     for (var i = 0; i < 1000; i++) {
         setTimeout(function() {
             var sweethearts = ["s", "w", "e", "e", "t", "h", "e", "a", "r", "t", "s"];
+            var mystring = "";
             for (var s = 0; s < 60; s++) {
                 if (Math.random()*100 < 50) {
-                    sweethearts += sweethearts[s];
+                    
+                    var randomFromArray = sweethearts[Math.floor(Math.random()*sweethearts.length)];
+                    sweethearts.push(randomFromArray);
+                    mystring += randomFromArray;
                 } else {
-                    sweethearts += " ";
+                    sweethearts.push(" ");
+                    mystring += " ";
                 }
         
             }
-            console.log(sweethearts);
+            console.log(mystring);
         }, timer);
         timer += 200;
         counter++;
