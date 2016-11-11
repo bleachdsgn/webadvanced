@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 55px;
+      }
+    </style>
+  </defs>
+  <title>eye</title>
+  <path id="closed" class="cls-1" d="M1147,511.68s-191.16,177.5-427,177.5-427-177.5-427-177.5m427,177.5v240.4m-235.84-293L353.66,838.51m730.38,0L953.53,636.63"/>
+</svg>
