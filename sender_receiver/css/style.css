@@ -1,10 +1,7 @@
-#project-wrapper {
-	opacity: 0;
-	transition: opacity 1.5s linear;
-}
+.fadeOnLoad {
 
-#project-wrapper.fade-in {
-	opacity: 1;
+	display: none;
+
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

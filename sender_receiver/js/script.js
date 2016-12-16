@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+       $('.fadeOnLoad').fadeIn(10000);
+
   $.ajax({
     url: "http://api.wunderground.com/api/72df18b7f213607b/astronomy/q/NY/Newyork.json",
     dataType: "jsonp",
@@ -73,6 +76,12 @@ $(document).ready(function() {
 
           };
 
+
+  
+
+
+
+
           
 
         }
@@ -80,6 +89,7 @@ $(document).ready(function() {
     }
   });
 });
+
 
 
 
