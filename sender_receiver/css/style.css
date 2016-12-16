@@ -1,3 +1,25 @@
+.ticket {
+
+    position: absolute;
+     background: white;
+/*     padding: 7px 3px;
+*/     -webkit-filter: blur(60px); /* Safari */
+    filter: blur(60px);
+    height: 40px;
+    width: 80px;
+    z-index: 100;
+ }
+
+.cloud {
+
+	background: white;
+	height: 100px;
+	width: 100px;
+	-webkit-filter: blur(70px); /* Safari */
+    filter: blur(70px);
+
+}
+
 .fadeOnLoad {
 
 	display: none;

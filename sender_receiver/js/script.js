@@ -1,6 +1,22 @@
 $(document).ready(function() {
 
-       $('.fadeOnLoad').fadeIn(10000);
+    var ticket="<div class='ticket'></div>";
+    var numTickets=20;
+    for(var x=1;x<=numTickets;x++){
+        $(ticket).appendTo("body");
+    }
+    // get window dimentions
+    var ww = $(window).width();
+    var wh = $(window).height();
+    $(".ticket").each(function(i){
+        var rotationNum=Math.round((Math.random()*360)+1);
+        var rotation="rotate("+rotationNum+"deg)";
+        var posx = Math.round(Math.random() * ww)-20;
+        var posy = Math.round(Math.random() * wh)-20;
+        $(this).css("top", posy + "px").css("left", posx + "px").css("transform",rotation).css("-ms-transform",rotation).css("-webkit-transform",rotation);
+    });
+  
+  $('.fadeOnLoad').fadeIn(10000);
 
   $.ajax({
     url: "http://api.wunderground.com/api/72df18b7f213607b/astronomy/q/NY/Newyork.json",
@@ -79,7 +95,18 @@ $(document).ready(function() {
 
   
 
-
+            for (var i=1; i <= 3; i++) {
+    // Minimum 0 and maximum 60%. You can change that.  
+    var y = Math.max((3 * i), Math.min((30 * i), Math.ceil(Math.random() * 100)));
+    var x = Math.max(0, Math.min(60, Math.ceil(Math.random() * 100)));
+    var y = Math.max(0, Math.min(60, Math.ceil(Math.random() * 100)));
+    $(".cloud").css({
+        position: 'absolute',
+        top: y + '%',
+        left: x + '%',
+        'background-color': 'rgba(255,255,255,' + Math.random() + ')'
+    }).text('top:' + y + ', left:' + x).appendTo('body');
+}
 
 
           
